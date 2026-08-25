@@ -4,13 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio - Safina</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e9d5ff 0%, #c084fc 100%);
+            color: #3b0764;
+            line-height: 1.6;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            background: #ffffff;
+            padding: 35px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(112, 26, 117, 0.15);
+            margin-bottom: 25px;
+            border: 2px solid #f0abfc;
+        }
+
+        .greeting-badge {
+            display: inline-block;
+            background: #f3e8ff;
+            color: #7e22ce;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        header h1 {
+            font-size: 2.6rem;
+            color: #581c87;
+            margin-bottom: 5px;
+        }
+
+        header .subtitle {
+            font-size: 1rem;
+            color: #9333ea;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        header .bio {
+            font-size: 0.95rem;
+            color: #4c1d95;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(112, 26, 117, 0.1);
+            margin-bottom: 25px;
+            border: 1px solid #f5d0fe;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: #7e22ce;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #fae8ff;
+            color: #86198f;
+            padding: 8px 16px;
+            border-radius: 12px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            border: 1px solid #f0abfc;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 15px;
+        }
+
+        .project-box {
+            background: #faf5ff;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #f3e8ff;
+        }
+
+        .project-box h3 {
+            font-size: 1.05rem;
+            color: #6b21a8;
+            margin-bottom: 8px;
+        }
+
+        .project-box p {
+            font-size: 0.88rem;
+            color: #581c87;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .contact-card {
+            text-align: center;
+            background: linear-gradient(135deg, #7e22ce 0%, #a855f7 100%);
+            color: #ffffff;
+        }
+
+        .contact-card h2 {
+            color: #ffffff;
+            justify-content: center;
+        }
+
+        .contact-card p {
+            color: #f3e8ff;
+            margin-bottom: 10px;
+        }
+
+        .btn-connect {
+            display: inline-block;
+            margin-top: 15px;
+            background: #ffffff;
+            color: #7e22ce;
+            padding: 10px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+    </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- HEADER -->
         <header>
             <div class="greeting-badge">👋 Hello, I'm Safina!</div>
             <h1>Safina</h1>
@@ -20,14 +172,12 @@
             </p>
         </header>
 
-        <!-- ABOUT ME -->
         <section class="card">
             <h2>✦ About Me</h2>
             <p>Saya merupakan siswa yang kreatif, bertanggung jawab, dan senang mencoba hal-hal baru. Selain mempelajari jaringan komputer, saya juga tertarik dengan dunia desain dan digital.</p>
-            <p>Saya percaya bahwa teknologi dan kreativitas dapat digabungkan untuk menghasilkan sesuatu yang menarik dan bermanfaat.</p>
+            <p style="margin-top: 8px;">Saya percaya bahwa teknologi dan kreativitas dapat digabungkan untuk menghasilkan sesuatu yang menarik dan bermanfaat.</p>
         </section>
 
-        <!-- SKILLS -->
         <section class="card">
             <h2>🛠️ My Skills</h2>
             <div class="skills-grid">
@@ -43,7 +193,6 @@
             </div>
         </section>
 
-        <!-- PROJECTS -->
         <section class="card">
             <h2>🎨 My Projects</h2>
             <div class="projects-grid">
@@ -66,7 +215,6 @@
             </div>
         </section>
 
-        <!-- WHY ME & GOAL -->
         <div class="two-column">
             <section class="card">
                 <h2>💜 Why Me?</h2>
@@ -79,7 +227,6 @@
             </section>
         </div>
 
-        <!-- CONTACT -->
         <section class="card contact-card">
             <h2>📩 Let's Connect!</h2>
             <p>Interested in working together or want to know more about me?</p>
