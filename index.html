@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio - Safina Lailathul Fitri</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Import Font: Poppins (Body), Playfair Display (Judul Elegant), & Alex Brush (Aksen Latin/Script) -->
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
         }
 
         body {
+            font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #f4effa 0%, #e9dcf7 50%, #f7eefc 100%);
             color: #3e334e;
             line-height: 1.7;
@@ -28,10 +29,10 @@
 
         /* HEADER HERO */
         header {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.92);
             backdrop-filter: blur(10px);
-            padding: 40px 30px;
-            border-radius: 24px;
+            padding: 45px 30px;
+            border-radius: 28px;
             box-shadow: 0 10px 30px rgba(139, 92, 246, 0.12);
             margin-bottom: 30px;
             border: 1px solid #ebdcfc;
@@ -42,13 +43,13 @@
         }
 
         .profile-photo {
-            width: 150px;
-            height: 150px;
+            width: 155px;
+            height: 155px;
             border-radius: 50%;
             overflow: hidden;
             border: 4px solid #c084fc;
             box-shadow: 0 8px 20px rgba(168, 85, 247, 0.2);
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             background-color: #f3e8ff;
         }
 
@@ -62,25 +63,29 @@
             display: inline-block;
             background: #f3e8ff;
             color: #7e22ce;
-            padding: 6px 18px;
+            padding: 4px 22px;
             border-radius: 20px;
-            font-size: 0.88rem;
-            font-weight: 600;
-            margin-bottom: 10px;
+            font-family: 'Alex Brush', cursive;
+            font-size: 1.6rem;
+            margin-bottom: 8px;
         }
 
         header h1 {
-            font-size: 2.2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
             color: #581c87;
             font-weight: 700;
             margin-bottom: 4px;
+            letter-spacing: 0.5px;
         }
 
         header .subtitle {
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: #9333ea;
             font-weight: 600;
             margin-bottom: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         header .location {
@@ -90,23 +95,35 @@
 
         /* CARD STYLES */
         .card {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.92);
             backdrop-filter: blur(8px);
-            padding: 30px;
-            border-radius: 20px;
+            padding: 32px;
+            border-radius: 22px;
             box-shadow: 0 8px 25px rgba(139, 92, 246, 0.08);
             margin-bottom: 25px;
             border: 1px solid #f3e8ff;
         }
 
         h2 {
-            font-size: 1.35rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
             color: #6b21a8;
             margin-bottom: 18px;
             display: flex;
             align-items: center;
             gap: 10px;
-            font-weight: 600;
+            font-weight: 700;
+        }
+
+        h2 span.latin-accent {
+            font-family: 'Alex Brush', cursive;
+            font-size: 2.2rem;
+            color: #a855f7;
+            font-weight: normal;
+        }
+
+        p {
+            font-size: 0.93rem;
         }
 
         /* SKILLS GRID */
@@ -119,8 +136,8 @@
         .skill-tag {
             background: #faf5ff;
             color: #7e22ce;
-            padding: 8px 16px;
-            border-radius: 12px;
+            padding: 8px 18px;
+            border-radius: 14px;
             font-size: 0.88rem;
             font-weight: 500;
             border: 1px solid #e9d5ff;
@@ -141,7 +158,7 @@
 
         .project-card {
             background: #ffffff;
-            border-radius: 16px;
+            border-radius: 18px;
             overflow: hidden;
             border: 1px solid #f3e8ff;
             box-shadow: 0 4px 15px rgba(0,0,0,0.03);
@@ -166,13 +183,15 @@
         }
 
         .project-info {
-            padding: 18px;
+            padding: 20px;
         }
 
         .project-info h3 {
-            font-size: 1.05rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.15rem;
             color: #581c87;
             margin-bottom: 8px;
+            font-weight: 700;
         }
 
         .project-info p {
@@ -199,6 +218,7 @@
         .contact-card h2 {
             color: #ffffff;
             justify-content: center;
+            font-family: 'Playfair Display', serif;
         }
 
         .contact-card p {
@@ -212,7 +232,7 @@
             margin-top: 15px;
             background: #ffffff;
             color: #6b21a8;
-            padding: 10px 24px;
+            padding: 10px 26px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
@@ -230,6 +250,7 @@
             padding: 20px;
             color: #8b5cf6;
             font-size: 0.85rem;
+            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
@@ -242,15 +263,15 @@
                 <!-- Memanggil foto.png -->
                 <img src="foto.png" alt="Safina Lailathul Fitri">
             </div>
-            <span class="greeting-badge">👋 Hello World!</span>
+            <span class="greeting-badge">Hello World</span>
             <h1>Safina Lailathul Fitri</h1>
-            <p class="subtitle">Student | IT & Networking | Digital Design</p>
+            <p class="subtitle">Student • IT & Networking • Digital Design</p>
             <p class="location">📍 Malang, Indonesia</p>
         </header>
 
         <!-- ABOUT ME -->
         <section class="card">
-            <h2>✦ About Me</h2>
+            <h2><span class="latin-accent">About</span> Me</h2>
             <p>
                 Saya adalah siswa SMK Negeri 1 Kepanjen jurusan Teknik Komputer dan Jaringan (TKJ). Saya memiliki ketertarikan pada bidang teknologi, jaringan komputer, dan desain digital.
             </p>
@@ -261,7 +282,7 @@
 
         <!-- SKILLS -->
         <section class="card">
-            <h2>🛠️ Skills</h2>
+            <h2><span class="latin-accent">My</span> Skills</h2>
             <div class="skills-grid">
                 <span class="skill-tag">Basic Network Configuration</span>
                 <span class="skill-tag">UTP Cable Crimping</span>
@@ -278,7 +299,7 @@
 
         <!-- PROJECTS -->
         <section class="card">
-            <h2>🎨 Projects</h2>
+            <h2><span class="latin-accent">Featured</span> Projects</h2>
             <div class="projects-grid">
                 
                 <div class="project-card">
@@ -327,14 +348,14 @@
         <!-- EXPERIENCE & GOALS -->
         <div class="two-column">
             <section class="card">
-                <h2>💼 Experience</h2>
+                <h2><span class="latin-accent">My</span> Experience</h2>
                 <p>
                     Selama mengikuti pembelajaran di jurusan TKJ, saya mendapatkan pengalaman dalam melakukan praktik jaringan komputer, troubleshooting dasar, konfigurasi perangkat jaringan, serta pembuatan desain digital.
                 </p>
             </section>
 
             <section class="card">
-                <h2>🚀 Goals</h2>
+                <h2><span class="latin-accent">Future</span> Goals</h2>
                 <p>
                     Saya ingin terus mengembangkan kemampuan di bidang IT, networking, dan desain digital. Ke depannya, saya berharap dapat menggabungkan kemampuan teknologi dan kreativitas untuk menghasilkan karya yang bermanfaat.
                 </p>
@@ -343,7 +364,7 @@
 
         <!-- CONTACT -->
         <section class="card contact-card">
-            <h2>📩 Let's Connect!</h2>
+            <h2>Let's Connect!</h2>
             <p><strong>Email:</strong> safinalthf@gmail.com</p>
             <p><strong>Location:</strong> Malang, Indonesia</p>
             <a href="mailto:safinalthf@gmail.com" class="btn-email">Send Email</a>
