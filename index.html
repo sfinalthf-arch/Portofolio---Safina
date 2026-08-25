@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NCT DREAM - The Official Fan Showcase</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Portofolio - Safina Lailathul Fitri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,251 +14,220 @@
         }
 
         body {
-            background: linear-gradient(135deg, #eefcf3 0%, #f4ebff 50%, #fdecf4 100%);
-            color: #374151;
+            background: linear-gradient(135deg, #f4effa 0%, #e9dcf7 50%, #f7eefc 100%);
+            color: #3e334e;
             line-height: 1.7;
             padding: 40px 20px;
             min-height: 100vh;
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
-        /* HERO HEADER */
+        /* HEADER HERO */
         header {
-            text-align: center;
             background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(12px);
-            padding: 50px 25px;
-            border-radius: 28px;
-            box-shadow: 0 10px 30px rgba(167, 243, 208, 0.35);
-            margin-bottom: 35px;
-            border: 2px solid #ffffff;
-        }
-
-        .badge {
-            display: inline-block;
-            background: #d1fae5;
-            color: #059669;
-            padding: 6px 20px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            letter-spacing: 1.5px;
-        }
-
-        header h1 {
-            font-size: 3.2rem;
-            color: #10b981;
-            font-weight: 700;
-            letter-spacing: -1px;
-            margin-bottom: 8px;
-        }
-
-        header .slogan {
-            color: #8b5cf6;
-            font-size: 1.15rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        header .desc {
-            max-width: 750px;
-            margin: 0 auto;
-            color: #6b7280;
-            font-size: 0.95rem;
-        }
-
-        /* GENERAL SECTIONS */
-        .section-card {
-            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 40px 30px;
             border-radius: 24px;
-            padding: 35px;
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.12);
             margin-bottom: 30px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
-            border: 1px solid #ffffff;
-        }
-
-        .section-title {
-            font-size: 1.6rem;
-            color: #1f2937;
-            margin-bottom: 20px;
-            font-weight: 700;
+            border: 1px solid #ebdcfc;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 10px;
-        }
-
-        .section-title span {
-            color: #10b981;
-        }
-
-        /* STATS GRID */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .stat-box {
-            background: #f0fdf4;
-            border: 1px solid #bbf7d0;
-            padding: 20px;
-            border-radius: 16px;
             text-align: center;
         }
 
-        .stat-box h3 {
-            font-size: 1.8rem;
-            color: #059669;
-            font-weight: 700;
-        }
-
-        .stat-box p {
-            font-size: 0.85rem;
-            color: #4b5563;
-        }
-
-        /* MEMBERS GRID */
-        .members-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-            gap: 25px;
-        }
-
-        .member-card {
-            background: #ffffff;
-            border-radius: 20px;
-            padding: 25px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.03);
-            border: 1px solid #f3e8ff;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .member-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 28px rgba(167, 243, 208, 0.4);
-        }
-
-        .photo-wrapper {
-            width: 130px;
-            height: 130px;
-            margin: 0 auto 15px auto;
+        .profile-photo {
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             overflow: hidden;
-            border: 4px solid #a7f3d0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border: 4px solid #c084fc;
+            box-shadow: 0 8px 20px rgba(168, 85, 247, 0.2);
+            margin-bottom: 20px;
         }
 
-        .photo-wrapper img {
+        .profile-photo img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
 
-        .member-card h3 {
-            font-size: 1.4rem;
-            color: #1f2937;
-            text-align: center;
-            margin-bottom: 2px;
-        }
-
-        .role-tag {
-            display: block;
-            text-align: center;
+        .greeting-badge {
+            display: inline-block;
             background: #f3e8ff;
             color: #7e22ce;
-            font-size: 0.78rem;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 0.88rem;
             font-weight: 600;
-            padding: 4px 12px;
-            border-radius: 12px;
-            margin: 0 auto 15px auto;
-            width: fit-content;
+            margin-bottom: 10px;
         }
 
-        .info-list {
-            font-size: 0.88rem;
-            color: #4b5563;
-            background: #faf5ff;
-            padding: 14px;
-            border-radius: 14px;
+        header h1 {
+            font-size: 2.2rem;
+            color: #581c87;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        header .subtitle {
+            font-size: 1rem;
+            color: #9333ea;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        header .location {
+            font-size: 0.9rem;
+            color: #71717a;
+        }
+
+        /* CARD STYLES */
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.08);
+            margin-bottom: 25px;
             border: 1px solid #f3e8ff;
         }
 
-        .info-list p {
-            margin-bottom: 6px;
-        }
-
-        .info-list p:last-child {
-            margin-bottom: 0;
-        }
-
-        .member-bio {
-            font-size: 0.85rem;
-            color: #6b7280;
-            margin-top: 12px;
-            line-height: 1.5;
-        }
-
-        /* ALBUMS GRID */
-        .albums-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
-        }
-
-        .album-box {
-            background: #fdf2f8;
-            border: 1px solid #fbcfe8;
-            padding: 20px;
-            border-radius: 16px;
-        }
-
-        .album-box h4 {
-            color: #db2777;
-            font-size: 1.05rem;
-            margin-bottom: 5px;
-        }
-
-        .album-box .year {
-            font-size: 0.8rem;
-            color: #9d174d;
+        h2 {
+            font-size: 1.35rem;
+            color: #6b21a8;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
             font-weight: 600;
-            margin-bottom: 8px;
         }
 
-        .album-box p {
-            font-size: 0.83rem;
-            color: #4b5563;
-        }
-
-        /* CONTENT LIST */
-        .show-list {
+        /* SKILLS GRID */
+        .skills-grid {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
 
-        .show-badge {
-            background: #eff6ff;
-            color: #2563eb;
-            border: 1px solid #bfdbfe;
+        .skill-tag {
+            background: #faf5ff;
+            color: #7e22ce;
             padding: 8px 16px;
             border-radius: 12px;
             font-size: 0.88rem;
             font-weight: 500;
+            border: 1px solid #e9d5ff;
+            transition: all 0.2s ease;
+        }
+
+        .skill-tag:hover {
+            background: #f3e8ff;
+            transform: translateY(-2px);
+        }
+
+        /* PROJECTS GRID */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #f3e8ff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(168, 85, 247, 0.15);
+        }
+
+        .project-img {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        .project-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 18px;
+        }
+
+        .project-info h3 {
+            font-size: 1.05rem;
+            color: #581c87;
+            margin-bottom: 8px;
+        }
+
+        .project-info p {
+            font-size: 0.88rem;
+            color: #52525b;
+            line-height: 1.5;
+        }
+
+        /* TWO COLUMNS */
+        .two-column {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        /* CONTACT CARD */
+        .contact-card {
+            text-align: center;
+            background: linear-gradient(135deg, #7e22ce 0%, #a855f7 100%);
+            color: #ffffff;
+            border: none;
+        }
+
+        .contact-card h2 {
+            color: #ffffff;
+            justify-content: center;
+        }
+
+        .contact-card p {
+            color: #f3e8ff;
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+
+        .btn-email {
+            display: inline-block;
+            margin-top: 15px;
+            background: #ffffff;
+            color: #6b21a8;
+            padding: 10px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s ease;
+        }
+
+        .btn-email:hover {
+            transform: scale(1.03);
         }
 
         /* FOOTER */
         footer {
             text-align: center;
-            margin-top: 40px;
-            padding: 25px;
-            color: #9ca3af;
+            padding: 20px;
+            color: #8b5cf6;
             font-size: 0.85rem;
         }
     </style>
@@ -266,202 +235,124 @@
 <body>
 
     <div class="container">
-        <!-- HEADER -->
+        <!-- HEADER / PROFIL -->
         <header>
-            <span class="badge">NCT SUB-UNIT</span>
-            <h1>NCT DREAM</h1>
-            <p class="slogan">"Yo Dream! 쩔어주자 파이팅! 💚"</p>
-            <p class="desc">
-                NCT DREAM adalah sub-unit ketiga dari boyband asal Korea Selatan, NCT, yang dibentuk oleh SM Entertainment pada tahun 2016. Terkenal dengan musik yang energik, konsep masa muda, dan koreografi yang tajam, NCT DREAM telah tumbuh dari idola remaja menjadi salah satu grup papan atas global.
-            </p>
+            <div class="profile-photo">
+                <!-- Foto Profil Anda -->
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="Safina Lailathul Fitri">
+            </div>
+            <span class="greeting-badge">👋 Hello World!</span>
+            <h1>Safina Lailathul Fitri</h1>
+            <p class="subtitle">Student | IT & Networking | Digital Design</p>
+            <p class="location">📍 Malang, Indonesia</p>
         </header>
 
-        <!-- ABOUT & STATS -->
-        <section class="section-card">
-            <h2 class="section-title">🌱 <span>Tentang NCT DREAM</span></h2>
+        <!-- ABOUT ME -->
+        <section class="card">
+            <h2>✦ About Me</h2>
             <p>
-                Mengawali debut pada 25 Agustus 2016 dengan lagu ikonik <em>"Chewing Gum"</em>, NCT DREAM awalnya mengusung sistem kelulusan berdasarkan usia. Namun, pada tahun 2020 sistem tersebut resmi dihapus, menjadikan ketujuh anggota (Mark, Renjun, Jeno, Haechan, Jaemin, Chenle, dan Jisung) sebagai unit tetap beranggotakan 7 orang (7DREAM).
+                Saya adalah siswa SMK Negeri 1 Kepanjen jurusan Teknik Komputer dan Jaringan (TKJ). Saya memiliki ketertarikan pada bidang teknologi, jaringan komputer, dan desain digital.
             </p>
-            
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <h3>2016</h3>
-                    <p>Tahun Debut</p>
-                </div>
-                <div class="stat-box">
-                    <h3>7</h3>
-                    <p>Member Tetap (7DREAM)</p>
-                </div>
-                <div class="stat-box">
-                    <h3>3M+</h3>
-                    <p>Penjualan Album / Rilis</p>
-                </div>
-                <div class="stat-box">
-                    <h3>Daesang</h3>
-                    <p>Penghargaan Utama Grand Prize</p>
-                </div>
+            <p style="margin-top: 8px;">
+                Saya senang mempelajari hal-hal baru, mengembangkan kemampuan, serta mengerjakan berbagai proyek yang berkaitan dengan teknologi dan desain.
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="card">
+            <h2>🛠️ Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Basic Network Configuration</span>
+                <span class="skill-tag">UTP Cable Crimping</span>
+                <span class="skill-tag">Fiber Optic Cable Splicing</span>
+                <span class="skill-tag">Cisco Packet Tracer</span>
+                <span class="skill-tag">MikroTik & Winbox</span>
+                <span class="skill-tag">Microsoft Office</span>
+                <span class="skill-tag">Canva Design</span>
+                <span class="skill-tag">Basic Graphic Design</span>
+                <span class="skill-tag">Communication</span>
+                <span class="skill-tag">Teamwork</span>
             </div>
         </section>
 
-        <!-- MEMBERS PROFILE -->
-        <section>
-            <h2 class="section-title" style="margin-bottom: 25px;">✨ <span>Profil Anggota (7DREAM)</span></h2>
-            
-            <div class="members-grid">
-
-                <!-- MARK -->
-                <div class="member-card">
-                    <div class="photo-wrapper">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Mark">
+        <!-- PROJECTS -->
+        <section class="card">
+            <h2>🎨 Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=500&q=80" alt="Network Configuration">
                     </div>
-                    <h3>Mark</h3>
-                    <span class="role-tag">Leader & Main Rapper</span>
-                    <div class="info-list">
-                        <p><strong>Nama Asli:</strong> Mark Lee (Lee Min-hyung)</p>
-                        <p><strong>Tanggal Lahir:</strong> 2 Agustus 1999</p>
-                        <p><strong>Zodiak / MBTI:</strong> Leo / INFJ</p>
+                    <div class="project-info">
+                        <h3>Network Configuration</h3>
+                        <p>Melakukan praktik konfigurasi jaringan dasar menggunakan perangkat jaringan dan Cisco Packet Tracer.</p>
                     </div>
-                    <p class="member-bio">Mark adalah kapten sekaligus pilar utama NCT DREAM. Dikenal dengan kemampuan rap yang luar biasa dan dedikasi kerja yang tinggi.</p>
                 </div>
 
-                <!-- RENJUN -->
-                <div class="member-card">
-                    <div class="photo-wrapper">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Renjun">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=500&q=80" alt="UTP Cable Crimping">
                     </div>
-                    <h3>Renjun</h3>
-                    <span class="role-tag">Main Vocalist</span>
-                    <div class="info-list">
-                        <p><strong>Nama Asli:</strong> Huang Renjun</p>
-                        <p><strong>Tanggal Lahir:</strong> 23 Maret 2000</p>
-                        <p><strong>Zodiak / MBTI:</strong> Aries / RJ-Type</p>
+                    <div class="project-info">
+                        <h3>UTP Cable Crimping</h3>
+                        <p>Melakukan pembuatan dan pengujian kabel UTP menggunakan konektor RJ-45 dengan standar T568A dan T568B.</p>
                     </div>
-                    <p class="member-bio">Memiliki suara murni dan lembut bak malaikat. Renjun juga sangat menyukai seni lukis dan memiliki kepribadian yang hangat.</p>
                 </div>
 
-                <!-- JENO -->
-                <div class="member-card">
-                    <div class="photo-wrapper">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Jeno">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=500&q=80" alt="Fiber Optic">
                     </div>
-                    <h3>Jeno</h3>
-                    <span class="role-tag">Lead Rapper, Dancer & Visual</span>
-                    <div class="info-list">
-                        <p><strong>Nama Asli:</strong> Lee Je-no</p>
-                        <p><strong>Tanggal Lahir:</strong> 23 April 2000</p>
-                        <p><strong>Zodiak / MBTI:</strong> Taurus / ISFP</p>
+                    <div class="project-info">
+                        <h3>Fiber Optic</h3>
+                        <p>Melakukan praktik penyambungan kabel fiber optik dan pengujian kualitas jaringan menggunakan alat yang sesuai.</p>
                     </div>
-                    <p class="member-bio">Terkenal dengan senyum matanya (eye-smile) dan fisik yang atletis. Jeno memikat panggung dengan tarian energik dan karismanya.</p>
                 </div>
 
-                <!-- HAECHAN -->
-                <div class="member-card">
-                    <div class="photo-wrapper">
-                        <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=400&q=80" alt="Haechan">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=500&q=80" alt="Digital Design">
                     </div>
-                    <h3>Haechan</h3>
-                    <span class="role-tag">Main Vocalist</span>
-                    <div class="info-list">
-                        <p><strong>Nama Asli:</strong> Lee Dong-hyuck</p>
-                        <p><strong>Tanggal Lahir:</strong> 6 Juni 2000</p>
-                        <p><strong>Zodiak / MBTI:</strong> Gemini / ESTP</p>
+                    <div class="project-info">
+                        <h3>Digital Design</h3>
+                        <p>Membuat berbagai desain digital seperti poster, infografis, presentasi, dan konten media sosial menggunakan Canva.</p>
                     </div>
-                    <p class="member-bio">Pemilik vokal unik yang sangat khas dan manis. Haechan adalah sosok <em>moodmaker</em> grup yang penuh keceriaan.</p>
-                </div>
-
-                <!-- JAEMIN -->
-                <div class="member-card">
-                    <div class="photo-wrapper">
-                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80" alt="Jaemin">
-                    </div>
-                    <h3>Jaemin</h3>
-                    <span class="role-tag">Lead Rapper, Visual & Dancer</span>
-                    <div class="info-list">
-                        <p><strong>Nama Asli:</strong> Na Jae-min</p>
-                        <p><strong>Tanggal Lahir:</strong> 13 Agustus 2000</p>
-                        <p><strong>Zodiak / MBTI:</strong> Leo / ISFJ</p>
-                    </div>
-                    <p class="member-bio">Sangat mencintai penggemar (NCTzen) dan hobi fotografi. Jaemin memiliki daya tarik visual yang manis dan karisma panggung yang kuat.</p>
-                </div>
-
-                <!-- CHENLE -->
-                <div class="member-card">
-                    <div class="photo-wrapper">
-                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80" alt="Chenle">
-                    </div>
-                    <h3>Chenle</h3>
-                    <span class="role-tag">Main Vocalist</span>
-                    <div class="info-list">
-                        <p><strong>Nama Asli:</strong> Zhong Chenle</p>
-                        <p><strong>Tanggal Lahir:</strong> 22 November 2001</p>
-                        <p><strong>Zodiak / MBTI:</strong> Sagitarius / ENFP</p>
-                    </div>
-                    <p class="member-bio">Vokalis dengan jangkauan nada tinggi yang bertenaga. Terkenal dengan tawanya yang renyah dan kecintaannya pada olahraga basket.</p>
-                </div>
-
-                <!-- JISUNG -->
-                <div class="member-card">
-                    <div class="photo-wrapper">
-                        <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&q=80" alt="Jisung">
-                    </div>
-                    <h3>Jisung</h3>
-                    <span class="role-tag">Main Dancer & Maknae</span>
-                    <div class="info-list">
-                        <p><strong>Nama Asli:</strong> Park Ji-sung</p>
-                        <p><strong>Tanggal Lahir:</strong> 5 Februari 2002</p>
-                        <p><strong>Zodiak / MBTI:</strong> Aquarius / INFP</p>
-                    </div>
-                    <p class="member-bio">Anggota termuda dengan bakat menari tingkat mahir sejak kecil. Memiliki suara bass yang dalam dan kepribadian yang pemalu namun menggemaskan.</p>
                 </div>
 
             </div>
         </section>
 
-        <!-- DISCOGRAPHY -->
-        <section class="section-card" style="margin-top: 35px;">
-            <h2 class="section-title">💿 <span>Diskografi Populer</span></h2>
-            <div class="albums-grid">
-                <div class="album-box">
-                    <h4>Hot Sauce</h4>
-                    <div class="year">2021 • 1st Full Album</div>
-                    <p>Album studio pertama yang membawa NCT DREAM meraih predikat "Million Seller" untuk pertama kalinya.</p>
-                </div>
-                <div class="album-box">
-                    <h4>Glitch Mode</h4>
-                    <div class="year">2022 • 2nd Full Album</div>
-                    <p>Menampilkan konsep futuristik dan eksperimental dengan lagu utama yang sangat adiktif.</p>
-                </div>
-                <div class="album-box">
-                    <h4>ISTJ</h4>
-                    <div class="year">2023 • 3rd Full Album</div>
-                    <p>Mengusung konsep kepribadian MBTI dengan musik energik khas hip-hop dan pop era 90-an.</p>
-                </div>
-                <div class="album-box">
-                    <h4>DREAM()ESCAPE</h4>
-                    <div class="year">2024 • EP Album</div>
-                    <p>Menyajikan warna musik yang lebih dewasa dan emosional, menceritakan perjuangan masa muda.</p>
-                </div>
-            </div>
+        <!-- EXPERIENCE & GOALS -->
+        <div class="two-column">
+            <section class="card">
+                <h2>💼 Experience</h2>
+                <p>
+                    Selama mengikuti pembelajaran di jurusan TKJ, saya mendapatkan pengalaman dalam melakukan praktik jaringan komputer, troubleshooting dasar, konfigurasi perangkat jaringan, serta pembuatan desain digital.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2>🚀 Goals</h2>
+                <p>
+                    Saya ingin terus mengembangkan kemampuan di bidang IT, networking, dan desain digital. Ke depannya, saya berharap dapat menggabungkan kemampuan teknologi dan kreativitas untuk menghasilkan karya yang bermanfaat.
+                </p>
+            </section>
+        </div>
+
+        <!-- CONTACT -->
+        <section class="card contact-card">
+            <h2>📩 Let's Connect!</h2>
+            <p><strong>Email:</strong> safinalthf@gmail.com</p>
+            <p><strong>Location:</strong> Malang, Indonesia</p>
+            <a href="mailto:safinalthf@gmail.com" class="btn-email">Send Email</a>
         </section>
 
-        <!-- VARIETY SHOWS -->
-        <section class="section-card">
-            <h2 class="section-title">📺 <span>Konten & Variety Show Pilihan</span></h2>
-            <p style="margin-bottom: 15px;">Nikmati keseruan dan kebersamaan 7DREAM melalui beberapa reality show populer berikut:</p>
-            <div class="show-list">
-                <span class="show-badge">7llin' in the DREAM</span>
-                <span class="show-badge">7llin' in the Our Youth</span>
-                <span class="show-badge">BU:QUEST NCT DREAM</span>
-                <span class="show-badge">Boys Mental Camp Season 2</span>
-                <span class="show-badge">Starstruck</span>
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer>
-            <p>Made with 💚 for all NCTzens around the world | 7DREAM Forever</p>
-        </footer>
     </div>
+
+    <footer>
+        <p>© 2026 Safina Lailathul Fitri. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
