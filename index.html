@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio - Safina Lailathul Fitri</title>
-    <!-- Import Font: Poppins (Body), Playfair Display (Judul Elegant), & Alex Brush (Aksen Latin/Script) -->
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Import Font: Plus Jakarta Sans (Modern Body) & Sacramento (Latin / Script Estetis) -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,28 +14,28 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #f4effa 0%, #e9dcf7 50%, #f7eefc 100%);
-            color: #3e334e;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b0914; /* Dark Background */
+            color: #e2e8f0;
             line-height: 1.7;
             padding: 40px 20px;
             min-height: 100vh;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 850px;
             margin: 0 auto;
         }
 
         /* HEADER HERO */
         header {
-            background: rgba(255, 255, 255, 0.92);
-            backdrop-filter: blur(10px);
+            background: rgba(22, 19, 38, 0.85);
+            backdrop-filter: blur(12px);
             padding: 45px 30px;
-            border-radius: 28px;
-            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.12);
-            margin-bottom: 30px;
-            border: 1px solid #ebdcfc;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin-bottom: 25px;
+            border: 1px solid rgba(139, 92, 246, 0.2);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -43,14 +43,14 @@
         }
 
         .profile-photo {
-            width: 155px;
-            height: 155px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             overflow: hidden;
-            border: 4px solid #c084fc;
-            box-shadow: 0 8px 20px rgba(168, 85, 247, 0.2);
-            margin-bottom: 18px;
-            background-color: #f3e8ff;
+            border: 3px solid #a855f7;
+            box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+            margin-bottom: 20px;
+            background-color: #1e1b2e;
         }
 
         .profile-photo img {
@@ -61,68 +61,66 @@
 
         .greeting-badge {
             display: inline-block;
-            background: #f3e8ff;
-            color: #7e22ce;
-            padding: 4px 22px;
+            background: rgba(168, 85, 247, 0.15);
+            color: #c084fc;
+            padding: 4px 20px;
             border-radius: 20px;
-            font-family: 'Alex Brush', cursive;
-            font-size: 1.6rem;
-            margin-bottom: 8px;
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 12px;
         }
 
         header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: #581c87;
+            font-size: 2.4rem;
+            color: #ffffff;
             font-weight: 700;
             margin-bottom: 4px;
-            letter-spacing: 0.5px;
         }
 
         header .subtitle {
             font-size: 0.95rem;
-            color: #9333ea;
+            color: #a855f7;
             font-weight: 600;
-            margin-bottom: 12px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
+            margin-bottom: 10px;
         }
 
         header .location {
-            font-size: 0.9rem;
-            color: #71717a;
+            font-size: 0.88rem;
+            color: #94a3b8;
         }
 
         /* CARD STYLES */
         .card {
-            background: rgba(255, 255, 255, 0.92);
-            backdrop-filter: blur(8px);
-            padding: 32px;
-            border-radius: 22px;
-            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.08);
-            margin-bottom: 25px;
-            border: 1px solid #f3e8ff;
+            background: rgba(22, 19, 38, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            margin-bottom: 22px;
+            border: 1px solid rgba(139, 92, 246, 0.15);
         }
 
         h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.6rem;
-            color: #6b21a8;
-            margin-bottom: 18px;
+            font-size: 1.4rem;
+            color: #ffffff;
+            margin-bottom: 16px;
             display: flex;
             align-items: center;
             gap: 10px;
-            font-weight: 700;
+            font-weight: 600;
         }
 
-        h2 span.latin-accent {
-            font-family: 'Alex Brush', cursive;
+        /* Font Latin Estetis */
+        .latin-font {
+            font-family: 'Sacramento', cursive;
             font-size: 2.2rem;
-            color: #a855f7;
+            color: #d8b4fe;
             font-weight: normal;
         }
 
         p {
+            color: #cbd5e1;
             font-size: 0.93rem;
         }
 
@@ -134,45 +132,44 @@
         }
 
         .skill-tag {
-            background: #faf5ff;
-            color: #7e22ce;
-            padding: 8px 18px;
-            border-radius: 14px;
-            font-size: 0.88rem;
+            background: rgba(168, 85, 247, 0.1);
+            color: #e9d5ff;
+            padding: 8px 16px;
+            border-radius: 12px;
+            font-size: 0.85rem;
             font-weight: 500;
-            border: 1px solid #e9d5ff;
+            border: 1px solid rgba(168, 85, 247, 0.25);
             transition: all 0.2s ease;
         }
 
         .skill-tag:hover {
-            background: #f3e8ff;
+            background: rgba(168, 85, 247, 0.25);
             transform: translateY(-2px);
         }
 
         /* PROJECTS GRID */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
         }
 
         .project-card {
-            background: #ffffff;
-            border-radius: 18px;
+            background: #161326;
+            border-radius: 16px;
             overflow: hidden;
-            border: 1px solid #f3e8ff;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(139, 92, 246, 0.15);
+            transition: transform 0.3s ease, border-color 0.3s ease;
         }
 
         .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(168, 85, 247, 0.15);
+            transform: translateY(-4px);
+            border-color: #a855f7;
         }
 
         .project-img {
             width: 100%;
-            height: 150px;
+            height: 140px;
             overflow: hidden;
         }
 
@@ -183,34 +180,32 @@
         }
 
         .project-info {
-            padding: 20px;
+            padding: 18px;
         }
 
         .project-info h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.15rem;
-            color: #581c87;
-            margin-bottom: 8px;
-            font-weight: 700;
+            font-size: 1.05rem;
+            color: #f1f5f9;
+            margin-bottom: 6px;
         }
 
         .project-info p {
-            font-size: 0.88rem;
-            color: #52525b;
+            font-size: 0.85rem;
+            color: #94a3b8;
             line-height: 1.5;
         }
 
         /* TWO COLUMNS */
         .two-column {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
             gap: 20px;
         }
 
         /* CONTACT CARD */
         .contact-card {
             text-align: center;
-            background: linear-gradient(135deg, #7e22ce 0%, #a855f7 100%);
+            background: linear-gradient(135deg, #5b21b6 0%, #7e22ce 100%);
             color: #ffffff;
             border: none;
         }
@@ -218,39 +213,37 @@
         .contact-card h2 {
             color: #ffffff;
             justify-content: center;
-            font-family: 'Playfair Display', serif;
         }
 
         .contact-card p {
-            color: #f3e8ff;
-            font-size: 0.95rem;
-            margin-bottom: 6px;
+            color: #e9d5ff;
+            font-size: 0.92rem;
+            margin-bottom: 4px;
         }
 
         .btn-email {
             display: inline-block;
             margin-top: 15px;
             background: #ffffff;
-            color: #6b21a8;
-            padding: 10px 26px;
+            color: #5b21b6;
+            padding: 10px 24px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             transition: transform 0.2s ease;
         }
 
         .btn-email:hover {
-            transform: scale(1.03);
+            transform: scale(1.04);
         }
 
         /* FOOTER */
         footer {
             text-align: center;
             padding: 20px;
-            color: #8b5cf6;
+            color: #64748b;
             font-size: 0.85rem;
-            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
@@ -260,29 +253,26 @@
         <!-- HEADER / PROFIL -->
         <header>
             <div class="profile-photo">
-                <!-- Memanggil foto.png -->
-                <img src="foto.png" alt="Safina Lailathul Fitri">
+                <!-- Memanggil raw link GitHub agar foto dipastikan muncul -->
+                <img src="https://raw.githubusercontent.com/sfinalthf-arch/Portofolio---Safina/main/foto.png" alt="Safina Lailathul Fitri">
             </div>
-            <span class="greeting-badge">Hello World</span>
+            <span class="greeting-badge">Hello, I'm Safina!</span>
             <h1>Safina Lailathul Fitri</h1>
-            <p class="subtitle">Student • IT & Networking • Digital Design</p>
+            <p class="subtitle">Student • IT & Networking • Creative Designer</p>
             <p class="location">📍 Malang, Indonesia</p>
         </header>
 
         <!-- ABOUT ME -->
         <section class="card">
-            <h2><span class="latin-accent">About</span> Me</h2>
+            <h2><span class="latin-font">About</span> Me</h2>
             <p>
-                Saya adalah siswa SMK Negeri 1 Kepanjen jurusan Teknik Komputer dan Jaringan (TKJ). Saya memiliki ketertarikan pada bidang teknologi, jaringan komputer, dan desain digital.
-            </p>
-            <p style="margin-top: 8px;">
-                Saya senang mempelajari hal-hal baru, mengembangkan kemampuan, serta mengerjakan berbagai proyek yang berkaitan dengan teknologi dan desain.
+                Saya adalah siswa SMK yang memiliki ketertarikan di bidang teknik komputer dan jaringan (TKJ) serta desain digital. Saya selalu antusias mempelajari hal baru, membuat desain kreatif, dan mengoptimalkan koneksi serta perangkat jaringan di bidang teknologi.
             </p>
         </section>
 
         <!-- SKILLS -->
         <section class="card">
-            <h2><span class="latin-accent">My</span> Skills</h2>
+            <h2><span class="latin-font">My</span> Skills</h2>
             <div class="skills-grid">
                 <span class="skill-tag">Basic Network Configuration</span>
                 <span class="skill-tag">UTP Cable Crimping</span>
@@ -299,7 +289,7 @@
 
         <!-- PROJECTS -->
         <section class="card">
-            <h2><span class="latin-accent">Featured</span> Projects</h2>
+            <h2><span class="latin-font">Featured</span> Projects</h2>
             <div class="projects-grid">
                 
                 <div class="project-card">
@@ -348,16 +338,16 @@
         <!-- EXPERIENCE & GOALS -->
         <div class="two-column">
             <section class="card">
-                <h2><span class="latin-accent">My</span> Experience</h2>
+                <h2><span class="latin-font">My</span> Experience</h2>
                 <p>
-                    Selama mengikuti pembelajaran di jurusan TKJ, saya mendapatkan pengalaman dalam melakukan praktik jaringan komputer, troubleshooting dasar, konfigurasi perangkat jaringan, serta pembuatan desain digital.
+                    Selama mengikuti pembelajaran di jurusan TKJ, saya mendapatkan pengalaman dalam melakukan praktik jaringan komputer, troubleshooting dasar, serta pembuatan desain digital.
                 </p>
             </section>
 
             <section class="card">
-                <h2><span class="latin-accent">Future</span> Goals</h2>
+                <h2><span class="latin-font">Future</span> Goals</h2>
                 <p>
-                    Saya ingin terus mengembangkan kemampuan di bidang IT, networking, dan desain digital. Ke depannya, saya berharap dapat menggabungkan kemampuan teknologi dan kreativitas untuk menghasilkan karya yang bermanfaat.
+                    Saya ingin terus mengembangkan kemampuan di bidang IT, networking, dan desain digital untuk menghasilkan karya yang bermanfaat.
                 </p>
             </section>
         </div>
